@@ -25,7 +25,9 @@ a:before {
     left: 0;
     top: 0;
     background-color: #351435;
-    transform: translateX(-100%);
+    /*transform: translateX(-100%);*/
+    /*transform: translateY(-100%);*/
+    transform: translateY(100%);
     transition: all 1s;
     z-index: -1;
 }
