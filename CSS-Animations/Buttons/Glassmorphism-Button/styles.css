@@ -31,4 +31,28 @@ a {
     letter-spacing: 1px;
     text-decoration: none;
     transition: .5s;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+}
+
+a:hover  {
+    letter-spacing: 3px;
+}
+
+a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.149), transparent);
+    transform: skewX(55deg);
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+a:hover:before {
+    transform: skewX(45deg) translate(200%);
+    transition-delay: 0s;
 }
